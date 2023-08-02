@@ -95,7 +95,7 @@ export default function Home() {
                   "This website. Funfact; This web is published during my Birthday!",
                 thumbnail:
                   "https://cdn.discordapp.com/attachments/1130116712549847142/1135435921601347704/image.png",
-                url: "https://google.com",
+                url: null,
                 moreInfo: {
                   lang: "NextJS, NodeJS, Javascript, Typescript, ExpressJS.",
                   duration: "1 Month",
