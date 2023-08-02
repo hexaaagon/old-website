@@ -160,7 +160,7 @@ const navbar = (
         </div>
         <div className="mt-auto">
           <p className="my-4 text-xs text-center text-gray-400">
-            <span>Copyright © 2021</span>
+            <span>This navbar is designed by Zeeslag.</span>
           </p>
         </div>
       </nav>
