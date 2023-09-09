@@ -62,6 +62,23 @@ function formatSec(seconds: number): string {
   return `${formattedMinutes}:${formattedSeconds}`;
 }
 
+export function FetchDiscordData() {
+  const [discordData, setDiscordData] = useState<lanyard | undefined>(
+    undefined
+  );
+
+  useEffect(() => {
+    axios({
+      method: "GET",
+      url: "https://api.lanyard.rest/v1/users/465454937267240962",
+    }).then((data: AxiosResponse) => {
+      setDiscordData(data.data.data);
+    });
+  }, []);
+
+  return discordData;
+}
+
 export default function Discord() {
   const [discordData, setDiscordData] = useState<lanyard | undefined>(
     undefined

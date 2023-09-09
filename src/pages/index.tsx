@@ -108,30 +108,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="flex justify-center">
-          <p className="text-2xl text-dark dark:text-white">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            Contact blum jadi karna ngejar dedlain
-            <p className="text-lg">Target: 10 Agustus</p>
-          </p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <a className="absolute -translate-y-12" id="contact"></a>
-        </div>
-      </div>
     </div>
   );
 }
