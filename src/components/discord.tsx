@@ -86,6 +86,7 @@ export default function Discord() {
   const [timestampNow, setTimestamp] = useState<number>(Date.now());
 
   const discordStatus = {
+    // not gonna use
     online: {
       color: "green-500",
       status: "Online",
@@ -99,7 +100,7 @@ export default function Discord() {
       status: "Do not Disturb",
     },
     offline: {
-      color: "slate-600",
+      color: "slate-400",
       status: "Offline",
     },
   };
@@ -162,11 +163,11 @@ export default function Discord() {
     <div className="flex justify-center items-center">
       <div
         id="trigger tailwind"
-        className="text-green-500 text-orange-500 text-red-600 text-slate-600"
+        className="text-green-500 text-orange-500 text-red-600 text-slate-400"
       ></div>
       <div className="w-48 md:h-full md:w-full">
         {discordData ? (
-          <div className="ring-sky-200 ring-2 max-w-md mx-auto bg-gradient-to-br from-slate-800 to-slate-500 rounded-xl shadow-md overflow-hidden md:max-w-32">
+          <div className="ring-sky-600 dark:ring-sky-200 ring-2 max-w-md mx-auto bg-gradient-to-br from-slate-300 to-slate-500 dark:from-slate-800 dark:to-slate-500 rounded-xl shadow-md overflow-hidden md:max-w-32">
             <div className="md:flex">
               <div className="md:shrink-0 flex justify-center items-center my-3 mx-3 md:my-2 md:mx-2">
                 <Image
@@ -178,10 +179,7 @@ export default function Discord() {
                 />
               </div>
               <div className="px-8 pb-4">
-                <div className="text-white leading-[1rem] md:translate-y-4">
-                  <p className={`text-${discordData.status.color} text-sm`}>
-                    {discordData.status.status}
-                  </p>
+                <div className="text-slate leading-[1rem] md:translate-y-4">
                   <p className="text-2xl font-semibold -translate-y-2 md:-translate-y-2">
                     {discordData.fullData.discord_user.global_name}
                   </p>
@@ -226,18 +224,18 @@ export default function Discord() {
                   </div>
                   <div className="px-8 pb-4">
                     <div className="text-white leading-[6px] md:translate-y-4">
-                      <p className="text-lg font-semibold text-green-500 text-ellipsis overflow-hidden max-w-[10rem] max-h-[2rem] md:max-w-[16rem]">
+                      <p className="text-lg font-semibold text-green-700 dark:text-green-500 text-ellipsis overflow-hidden max-w-[10rem] max-h-[2rem] md:max-w-[16rem]">
                         {discordData.fullData.spotify.song}
                       </p>
                       <p className="text-sm font-light text-ellipsis overflow-hidden max-w-[10rem] max-h-[1rem] md:max-w-[20rem]">
                         by{" "}
-                        <span className="text-green-600">
+                        <span className="text-green-800 dark:text-green-600">
                           {discordData.fullData.spotify.artist}
                         </span>
                       </p>
                       <div className="text-sm font-light text-ellipsis overflow-hidden max-w-[10rem] max-h-[1.5rem] md:max-w-[20rem]">
                         on{" "}
-                        <span className="text-green-600">
+                        <span className="text-green-800 dark:text-green-600">
                           {discordData.fullData.spotify.album}
                         </span>
                       </div>

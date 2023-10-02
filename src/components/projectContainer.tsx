@@ -17,7 +17,7 @@ interface data {
 
 export default function container(data: data) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full max-w-[24rem] sm:max-w-[32rem] md:max-w-[48rem]">
+    <div className="bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full max-w-[24rem] sm:max-w-[32rem] md:max-w-[48rem]">
       <Image
         src={data.thumbnail}
         alt="Project 1"
@@ -26,9 +26,9 @@ export default function container(data: data) {
         className="w-full h-48 object-cover"
       />
       <div className="p-6">
-        <h2 className="text-xl text-gray-100 font-bold mb-2">{data.name}</h2>
-        <p className="text-gray-400">{data.description}</p>
-        <div className="mt-4">
+        <h2 className="text-xl text-gray-950 dark:text-gray-100 font-bold mb-2">{data.name}</h2>
+        <p className="text-gray-900 dark:text-gray-400">{data.description}</p>
+        <div className="mt-4 text-black dark:text-white">
           <p>
             <strong>Language:</strong> {data.moreInfo.lang}
           </p>

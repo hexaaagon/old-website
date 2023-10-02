@@ -30,7 +30,7 @@ export const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-0 right-0 p-10 z-50">
+    <div className="fixed bottom-4 right-4 z-50">
       <button
         type="button"
         onClick={scrollToTop}
@@ -39,7 +39,7 @@ export const ScrollToTop = () => {
           "ease-in-out duration-500"
         )}
       >
-        <Icon.ArrowUpCircle color="orange" className="scale-[125%]" />
+        <Icon.ArrowUpCircle color="orange" className="h-8 w-8" />
       </button>
     </div>
   );
