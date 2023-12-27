@@ -1,3 +1,8 @@
+# This repository has been archived.
+This repository has been archived due to upgrading the NextJS Pages Router into NextJS App Router and a <strong>new & nice design</strong>
+
+<hr />
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
