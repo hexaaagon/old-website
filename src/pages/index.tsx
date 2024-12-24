@@ -73,7 +73,7 @@ export default function Home() {
               <Typewriter
                 options={{
                   strings:
-                    "Hello there! I'm Bagas, but you might also know me as Scoooolzs or Hexagonn. I'm a 13-year-old programmer with a passion for coding. My journey in the world of programming began in 2019 when I first delved into scripting. Since then, I've been honing my skills, and one of my favorite projects has been creating Discord bots.",
+                    "Hello there! I'm <REDACTED>, but you might also know me as Scoooolzs or Hexagonn. I'm a <REDACTED>-year-old programmer with a passion for coding. My journey in the world of programming began in 2019 when I first delved into scripting. Since then, I've been honing my skills, and one of my favorite projects has been creating Discord bots.",
                   autoStart: true,
                   delay: 15,
                 }}
